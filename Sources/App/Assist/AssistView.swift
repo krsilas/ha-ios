@@ -112,7 +112,7 @@ struct AssistView: View {
                 AssistTypingIndicator()
                     .padding(.vertical, Spaces.half)
             } else {
-                Text(item.content)
+                Text(item.attributedContent)
             }
         }
         .padding(8)

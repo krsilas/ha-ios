@@ -19,3 +19,8 @@ public struct AssistChatItem: Equatable {
         case info
     }
 }
+extension AssistChatItem {
+    public var attributedContent: AttributedString {
+        (try? AttributedString(markdown: content)) ?? AttributedString(content)
+    }
+}
